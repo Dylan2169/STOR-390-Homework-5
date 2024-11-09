@@ -1,0 +1,31 @@
+---
+title: "HW 5"
+author: "Dylan Doby"
+date: "12/29/2023"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+\fontsize{12}{18}
+\fontseries{d}
+\selectfont
+
+This homework is meant to give you practice in creating and defending a position with both statistical and philosophical evidence.  We have now extensively talked about the COMPAS ^[https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis] data set, the flaws in applying it but also its potential upside if its shortcomings can be overlooked.  We have also spent time in class verbally assessing positions both for an against applying this data set in real life.  In no more than two pages ^[knit to a pdf to ensure page count] take the persona of a statistical consultant advising a judge as to whether they should include the results of the COMPAS algorithm in their decision making process for granting parole.  First clearly articulate your position (whether the algorithm should be used or not) and then defend said position using both statistical and philosophical evidence.  Your paper will be grade both on the merits of its persuasive appeal but also the applicability of the statistical and philosohpical evidence cited.  
+
+
+*STUDENT RESPONSE*
+
+
+As a statistical consultant evaluating the COMPAS recidivism prediction algorithm, I advise against its definitive use in parole decision-making due to its substantial statistical and ethical limitations. While COMPAS presents an efficient, data-driven method for assessing recidivism risk by assigning a risk score from 1 to 10, its inherent biases and opaque design introduce risks that could undermine principles of justice and fairness in the judicial process. Relying on COMPAS could unintentionally perpetuate systemic biases, disproportionately affecting vulnerable demographic groups.
+
+&nbsp;  
+
+From a statistical perspective, COMPAS fails to meet essential fairness standards for equitable decision-making. Specifically, it does not satisfy independence (statistical parity) or separation (equalized odds), which are necessary for unbiased predictions. By violating statistical parity, COMPAS demonstrates disparate impact, meaning that individuals from protected groups (e.g., certain racial or socioeconomic groups) are not given equal chances of being classified as either high or low risk. This discrepancy suggests that COMPAS’s predictions might be influenced by racial proxies, such as ZIP code, which indirectly correlate with race and income, leading to skewed outcomes that disproportionately affect these groups. Moreover, COMPAS fails to meet equalized odds, as its true positive and false positive rates differ between demographic groups. This inconsistency implies that members of certain racial groups may face higher rates of incorrect classification, subjecting them to an increased likelihood of unjust parole denial or a perceived high-risk label. Although COMPAS satisfies the sufficiency criterion—where knowing an individual’s race does not improve the predictive power once the risk score is established—this alone does not address the fairness concerns posed by the discrepancies in error rates and lack of independence.
+
+&nbsp;  
+
+Philosophically, the use of COMPAS in parole decisions also raises ethical issues that conflict with principles of fairness and respect for individual autonomy. According to John Rawls’s Difference Principle, social and economic inequalities are justified only if they benefit the least advantaged members of society. However, COMPAS’s reliance on socioeconomic proxies risks disadvantaging the very groups Rawls’s principle aims to protect. For instance, using ZIP code as a predictor may reinforce biases that disproportionately affect low-income or minority populations, amplifying the disadvantages these groups already encounter within the criminal justice system. Additionally, from a deontological standpoint, which emphasizes duty-based ethics, COMPAS’s black-box design undermines transparency—a key component in ethical decision-making. Kant’s second formula of his categorical imperative requires that individuals be treated as ends in themselves rather than means to an end. However, COMPAS reduces individuals to algorithmic scores without affording judges or defendants insight into the decision-making process. This opacity prevents individuals from understanding or questioning the basis of decisions impacting their lives, violating the ethical duty of transparency in these sorts of life-altering judgments.
+
+&nbsp;  
+
+While COMPAS offers potential efficiency in assessing recidivism risk, the risks associated with its use—namely, its statistical biases and ethical shortcomings—make it unsuitable for just and equitable parole decisions. Relying on COMPAS could institutionalize biased outcomes, thereby undermining the principles of justice and fairness that should govern judicial processes. For these reasons, I recommend that judges avoid integrating COMPAS scores into their decision-making process and instead prioritize other transparent, interpretable methods that align with both statistical and philosophical standards of fairness in the judicial context.
